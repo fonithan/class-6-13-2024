@@ -1,0 +1,20 @@
+---
+title: "class-6-13-2024"
+author: "Phanithan Konda"
+format: html
+execute: 
+  echo: FALSE
+---
+
+```{r}
+#| message = FALSE
+library(tidyverse)
+x <- read.csv("downloads/mass-tracts.csv")
+```
+
+
+```{r}
+x |>  
+  ggplot(aes(x = race, y = med_income, color = race)) + geom_point()
+```
+
